@@ -1,4 +1,4 @@
-"using strict";
+"use strict";
 
 let count = 0;
 
@@ -7,55 +7,40 @@ const incrementBtn = document.querySelector(".increment-btn");
 const resetBtn = document.querySelector(".reset-btn");
 const decrementBtn = document.querySelector(".decrement-btn");
 
-
+// Function to increment the count
 function incrementCount() {
-    // Write the relevant code in this block
-
+    count++;
 }
 
-
+// Function to decrement the count
 function decrementCount() {
-    // Write the relevant code in this block
-
+    count--;
 }
 
-
+// Function to reset the count
 function resetCount() {
-    // Write the relevant code in this block
-    
+    count = 0;
 }
 
+// Function to render the updated count on the screen
 function renderUpdatedCount() {
     countElement.innerText = count;
 }
 
+// Event listener for increment button
 incrementBtn.addEventListener("click", function () {
-    // Write code below this line
-
-
-
-    // STOP HERE
-
-
-    renderUpdatedCount();
+    incrementCount(); // Increment the count
+    renderUpdatedCount(); // Update the UI with the new count
 });
 
+// Event listener for reset button
 resetBtn.addEventListener("click", function () {
-    // Write code below this line
-    
-
-    // STOP HERE
-    
-    
-    renderUpdatedCount();
+    resetCount(); // Reset the count to 0
+    renderUpdatedCount(); // Update the UI with the new count
 });
 
+// Event listener for decrement button
 decrementBtn.addEventListener("click", function () {
-    // Write code below this line
-
-
-    // STOP HERE
-
-
-    renderUpdatedCount();
+    decrementCount(); // Decrement the count
+    renderUpdatedCount(); // Update the UI with the new count
 });

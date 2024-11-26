@@ -65,5 +65,30 @@ body {
     text-align: center;
 }
 
-@media (width >= 500px) {
+@media (min-width: 500px) {
+    body {
+        display: block; /* Example: Change flex layout to block for wider screens */
+    }
+
+    .main {
+        max-width: 600px; /* Adjusting the max width for wider screens */
+        margin: 9rem auto; /* Adding more margin for spacing */
+    }
+
+    .app-card {
+        flex-direction: row; /* Example: Change card layout to row on wider screens */
+        gap: 1rem; /* Add spacing between elements in the row */
+    }
+
+    .btn-container {
+        flex-direction: column; /* Arrange buttons in a row */
+        justify-content: space-around; /* Spread out buttons evenly */
+    }
+
+    .decrement-btn,
+    .reset-btn,
+    .increment-btn {
+        width: 250px; /* Allow buttons to resize based on content */
+        max-width: none; /* Remove max-width restriction */
+    }
 }

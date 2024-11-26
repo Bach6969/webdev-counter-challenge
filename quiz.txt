@@ -1,4 +1,5 @@
 1. Why do you use "using strict" at the top of your JS files?
+Using "use strict" in JavaScript enables Strict Mode, which enforces safer and cleaner coding practices. It prevents common mistakes like creating accidental global variables, disallows problematic features like with statements or octal literals, and simplifies this bindings by making them undefined in certain cases instead of defaulting to the global object. Strict mode also helps catch silent errors, ensures better optimization by JavaScript engines, and prepares your code for compatibility with modern ES6+ features, making it more robust, secure, and maintainable. 
 2. What does line 3 mean?
 3. What is happening on lines 5-8 and why?
 4. If you implemented the functionality of the buttons,
